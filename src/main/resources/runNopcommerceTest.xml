@@ -1,0 +1,52 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--<?xml version="1.0" encoding="UTF-8" ?>-->
+<suite name="NopCommerce">
+<!--    Apply listeners for all testcases-->
+    <listeners>
+        <listener class-name="actions.commons.MethodListener"></listener>
+        <!--Config for ReportNG-->
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+<!--        <listener class-name="reportConfig.ReportNGListener"></listener>-->
+        <listener class-name="reportConfig.ExtentTestListener"></listener>
+    </listeners>
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+<!--            <class name="RegisterANewAccount"></class>-->
+<!--            <class name="Cookie"></class>-->
+<!--            <class name="User_01_Register_05_PageGeneratorManager"/>-->
+<!--            <class name="User_02_Login"></class>-->
+<!--            <class name="User_03_SwitchPage"></class>-->
+<!--            <class name="User_05_Dynamic_Locator"></class>-->
+<!--            <class name="User_06_Assert_Verify"></class>-->
+<!--            <class name="User_07_Apply_Log4J"></class>-->
+<!--            <class name="User_08_ReportNG_Screenshot"></class>-->
+<!--            <class name="User_09_Extent_Report_V5"></class>-->
+<!--            <class name="User_10_Share_Data"></class>-->
+<!--            <class name="User_11_Cookie"></class>-->
+<!--            <class name="User_12_Close_Browser_Driver"></class>-->
+            <class name="nopcommerce.user.User_13_Pattern_Object"></class>
+
+        </classes>
+    </test>
+
+
+    <!--    <test name="Run on Firefox">
+            <parameter name="browser" value="firefox"/>
+            <classes>
+                <class name="User_01_Register_04_POM"/>
+                &lt;!&ndash;            <class name="User_02_Login"></class>&ndash;&gt;
+            </classes>
+        </test>
+
+        <test name="Run on Edge">
+            <parameter name="browser" value="edge"/>
+            <classes>
+                <class name="User_01_Register_04_POM"/>
+            </classes>
+        </test>-->
+
+</suite>
+

@@ -1,0 +1,7 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JQUERY - ALL SUITE">
+    <suite-files> 
+        <suite-file path="runJQuery_UploadFile_Test.xml"></suite-file>
+        <suite-file path="runJQuery_DataTable_Test.xml"></suite-file>
+    </suite-files>
+</suite>

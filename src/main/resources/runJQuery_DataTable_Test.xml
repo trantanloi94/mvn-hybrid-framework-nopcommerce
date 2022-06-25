@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="JQuery">
+    <!--    Apply listeners for all testcases-->
+    <listeners>
+        <listener class-name="actions.commons.MethodListener"></listener>
+    </listeners>
+<!--    <parameter name="url" value="https://www.jqueryscript.net/demo/CRUD-Data-Grid-Plugin-jQuery-Quickgrid/"></parameter>-->
+    <parameter name="url" value="https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/"></parameter>
+    <test name="Run on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testcases.com.jquery.datatable.Level_10_DataTable"></class>
+        </classes>
+    </test>
+
+
+</suite>
+
